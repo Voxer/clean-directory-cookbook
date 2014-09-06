@@ -31,6 +31,9 @@ clean_directory '/tmp/test'
 The run will look something like this
 
 ```
+* directory[/tmp/test]
+  - create new directory /tmp/test
+
 * file[/tmp/test/foo]
   - create new file /tmp/test/foo
 
@@ -40,14 +43,14 @@ The run will look something like this
 
 When it runs, it will ensure `/tmp/test` exists, and that the files
 `foo` and `bar` exist in it.  The `clean_directory` line will ensure
-that no un-cheffed files exist in that directory.
+that no non-chef files exist in that directory.
 
 Now, let's create some files outside of chef in that directory
 
     $ touch /tmp/test/yolo
     $ touch /tmp/test/whatever
 
-Rerunning chef will result in
+Rerunning chef again will result in
 
 ```
 * file[clean_directory: /tmp/test/yolo]
