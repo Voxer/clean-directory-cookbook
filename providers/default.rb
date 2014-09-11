@@ -1,3 +1,12 @@
+#
+# Cookbook Name:: clean-directory
+# Provider:: default
+#
+# Author:: Dave Eddy <dave@daveeddy.com>
+# Copyright:: Copyright (c) 2007-2014, Voxer LLC
+# License:: MIT
+#
+
 use_inline_resources
 
 def whyrun_supported?

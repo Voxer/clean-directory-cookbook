@@ -1,3 +1,12 @@
+#
+# Cookbook Name:: clean-directory
+# Resource:: default
+#
+# Author:: Dave Eddy <dave@daveeddy.com>
+# Copyright:: Copyright (c) 2007-2014, Voxer LLC
+# License:: Proprietary - All Rights Reserved
+#
+
 actions        :clean
 default_action :clean
 

@@ -1,6 +1,6 @@
 #
 # Cookbook Name: clean-directory
-# Library: default
+# Recipe: default
 #
 # Copyright: Copyright (c) 2014, Voxer LLC
 # License: MIT License
