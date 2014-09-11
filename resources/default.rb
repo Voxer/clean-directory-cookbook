@@ -4,7 +4,7 @@
 #
 # Author:: Dave Eddy <dave@daveeddy.com>
 # Copyright:: Copyright (c) 2007-2014, Voxer LLC
-# License:: Proprietary - All Rights Reserved
+# License:: MIT
 #
 
 actions        :clean
