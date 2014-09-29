@@ -50,7 +50,7 @@ Now, let's create some files outside of chef in that directory
     $ touch /tmp/test/yolo
     $ touch /tmp/test/whatever
 
-Rerunning chef again will result in
+Running chef again will result in
 
 ```
 * file[clean_directory: /tmp/test/yolo]
@@ -63,7 +63,23 @@ Rerunning chef again will result in
 Tests
 -----
 
-This cookbook is in desperate need of tests
+```
+$ rspec
+.......
+
+Finished in 3.21 seconds (files took 2.8 seconds to load)
+7 examples, 0 failures
+
+ChefSpec Coverage report generated...
+
+  Total Resources:   15
+  Touched Resources: 15
+  Touch Coverage:    100.0%
+
+You are awesome and so is your test coverage! Have a fantastic day!
+
+```
+
 
 License
 -------
@@ -71,7 +87,7 @@ License
 MIT License
 
 ```
-Copyright: 2014, Voxer, Inc
+Copyright: 2007-2014, Voxer, Inc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
