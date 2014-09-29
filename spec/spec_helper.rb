@@ -3,7 +3,7 @@
 # Spec:: spec_helper
 #
 # Copyright:: Copyright (c) 2007-2014, Voxer LLC
-# License:: All rights reserved - Do Not Redistribute
+# License:: MIT License
 #
 
 require 'chefspec'

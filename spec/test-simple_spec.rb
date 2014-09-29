@@ -4,7 +4,7 @@
 #
 # Author:: Anand Suresh <anand.suresh@voxer.com>
 # Copyright:: Copyright (c) 2007-2014, Voxer LLC
-# License:: Proprietary - All Rights Reserved
+# License:: MIT License
 #
 
 require_relative 'spec_helper'
