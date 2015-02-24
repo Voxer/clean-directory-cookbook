@@ -1,25 +1,26 @@
 #
 # Cookbook Name:: clean-directory
-# Provider:: default
+# Library:: default
 #
 # Author:: Dave Eddy <dave@daveeddy.com>
-# Copyright:: Copyright (c) 2007-2014, Voxer LLC
+# Copyright:: Copyright (c) 2007-2015, Voxer LLC
 # License:: MIT
 #
 
-use_inline_resources
-
-def whyrun_supported?
-  true
-end
-
-action :clean do
-  path = new_resource.path || new_resource.name
+def clean_directory(path, types=nil, run_context=nil)
   raise 'clean_directory path must be a non-empty string!' if path.nil? or path.empty?
+  types ||= [
+    Chef::Resource::File,
+    Chef::Resource::Link,
+    Chef::Resource::CookbookFile,
+    Chef::Resource::RemoteFile,
+    Chef::Resource::Template,
+  ]
+  run_context ||= node.run_context
 
   # find the chef files generated
-  chef_files_generated = node.run_context.resource_collection.select { |r|
-    new_resource.types.include?(r.class) and r.path.start_with?(path)
+  chef_files_generated = run_context.resource_collection.select { |r|
+    types.include?(r.class) and r.path.start_with?(path)
   }.map { |r| r.path }
 
   # find the fileststem files present

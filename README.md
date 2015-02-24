@@ -60,34 +60,13 @@ Running chef again will result in
   - delete file /tmp/test/whatever]
 ```
 
-Tests
------
-
-```
-$ rspec
-.......
-
-Finished in 3.21 seconds (files took 2.8 seconds to load)
-7 examples, 0 failures
-
-ChefSpec Coverage report generated...
-
-  Total Resources:   15
-  Touched Resources: 15
-  Touch Coverage:    100.0%
-
-You are awesome and so is your test coverage! Have a fantastic day!
-
-```
-
-
 License
 -------
 
 MIT License
 
 ```
-Copyright: 2007-2014, Voxer, Inc
+Copyright: 2007-2015, Voxer, Inc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
